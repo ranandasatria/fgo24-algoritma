@@ -2,12 +2,11 @@
 Membuat algoritma konversi dari Celcius ke Fahrenheit, Kelvin, dan Reamur
 1. Mulai
 2. Tentukan variabel: C = Celcius, F = Fahrenheit, K = Kelvin, R = Reamur
-3. Masukkan suhu dalam C
-4. Pilih tipe konversi
+3. Masukkan nilai C
 5. Jika konversi ke F = (9/5 × C) + 32
-6. Jika konversi ke K = C + 273.15
+6. Jika konversi ke K = C + 273
 7. Jika konversi ke R = 4/5 x C
-8. Cetak hasil F, K, atau R sebagai Result
+8. Tampilkan hasil F, K, atau R sebagai Result
 9. Selesai
 
 ## Flowchart
@@ -46,9 +45,9 @@ F <- (9/5 * C) + 32
 K <- C + 273
 R <- 4/5 * C
 
-OUTPUT "Hasil konversi dari Celcius ke Fahrenheit adalah", F
-OUTPUT "Hasil konversi Celcius ke Kelvin adalah", K
-OUTPUT "Hasil konversi Celcius ke Reamur adalah", R
+OUTPUT F
+OUTPUT K
+OUTPUT R
 
 ```
 
