@@ -54,7 +54,7 @@ OUTPUT Genap, "adalah Bilangan Genap"
 
 ## Pseudocode cara 2
 ```
-DECLARE Bilangan : INTEGER
+DECLARE Bilangan: INTEGER
 
 INPUT Bilangan
 
