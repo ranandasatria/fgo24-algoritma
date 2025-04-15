@@ -1,11 +1,11 @@
 # Algoritma - Minitask 
 Membuat algoritma untuk menentukan bilangan ganjil atau genap
 1. Mulai
-2. Masukkan bilangan yang ingin diperiksa
-2. Bagi bilangan tersebut dengan 2
-3. Jika tidak habis dibagi 2 atau hasilnya 1, maka bilangan tersebut bilangan ganjil
-4. Jika habis dibagi 2 atau hasilnya 0, maka bilangan tersebut bilangan genap
-5. Selesai
+2. Masukkan bilangan x yang ingin diperiksa
+3. Bagi bilangan x tersebut dengan 2
+4. Jika habis dibagi 2, maka bilangan x tersebut bilangan genap
+5. Jika tidak habis dibagi 2, maka bilangan x tersebut bilangan ganjil
+6. Selesai
 
 ## Flowchart (Pakai sintaks semantik)
 ```mermaid
@@ -30,35 +30,21 @@ e --> f
 
 ```mermaid
 flowchart
-A((Mulai)) --> B[/Masukkan bilangan/] 
-B --> C{Bilangan dibagi 2 sama dengan 0?}
-C -- Ya --> D[/"Bilangan Genap"/]
-C -- Tidak --> E[/"Bilangan Ganjil"/]
+A((Mulai)) --> B[/x/] 
+B --> C{X dibagi 2 sama dengan 0}
+C -- Ya --> D[/'"Bilangan Genap"'/]
+C -- Tidak --> E[/'"Bilangan Ganjil"'/]
 D --> F(((Selesai)))
 E --> F
 ```
-## Pseudocode cara 1
+
+## Pseudocode
 ```
-DECLARE Ganjil: INTEGER
-DECLARE Genap: INTEGER
 DECLARE x: INTEGER
 
 INPUT x
 
-Ganjil <- x % 2 != 0
-Genap <- x % 2 == 0
-
-OUTPUT Ganjil, "adalah Bilangan Ganjil"
-OUTPUT Genap, "adalah Bilangan Genap"
-```
-
-## Pseudocode cara 2
-```
-DECLARE Bilangan: INTEGER
-
-INPUT Bilangan
-
-IF Bilangan MOD 2 = 0 THEN
+IF x MOD 2 = 0 THEN
     OUTPUT "Bilangan Genap"
 ELSE
     OUTPUT "Bilangan Ganjil"
