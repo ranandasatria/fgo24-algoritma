@@ -37,4 +37,30 @@ C -- Tidak --> E[/"Bilangan Ganjil"/]
 D --> F(((Selesai)))
 E --> F
 ```
+## Pseudocode cara 1
+```
+DECLARE Ganjil: INTEGER
+DECLARE Genap: INTEGER
+DECLARE x: INTEGER
 
+INPUT x
+
+Ganjil <- x % 2 != 0
+Genap <- x % 2 == 0
+
+OUTPUT Ganjil, "adalah Bilangan Ganjil"
+OUTPUT Genap, "adalah Bilangan Genap"
+```
+
+## Pseudocode cara 2
+```
+DECLARE Bilangan : INTEGER
+
+INPUT Bilangan
+
+IF Bilangan MOD 2 = 0 THEN
+    OUTPUT "Bilangan Genap"
+ELSE
+    OUTPUT "Bilangan Ganjil"
+ENDIF
+```
