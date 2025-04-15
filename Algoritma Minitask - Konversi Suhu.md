@@ -14,13 +14,55 @@ Membuat algoritma konversi dari Celcius ke Fahrenheit, Kelvin, dan Reamur
 ```mermaid
 flowchart
 a@{shape: circle, label: "Mulai"}
+var@{shape: rect, label: F K R}
+b@{shape: lean-r, label: "C"}
+d@{shape: rect, label: F = (9/5 × C) + 32}
+e@{shape: rect, label: K = C + 273}
+f@{shape: rect, label: R = 4/5 x C}
+output@{shape: lean-r, label: '"F, K, R"'}
+j@{shape: dbl-circ, label: "Selesai"}
+
+a --> var
+var --> b
+b --> d
+b --> e
+b --> f
+d --> output
+e --> output
+f --> output
+output --> j
+
+```
+## Pseudocode
+```
+DECLARE C: REAL
+DECLARE F: REAL
+DECLARE K: REAL
+DECLARE R: REAL
+
+INPUT C
+
+F <- (9/5 * C) + 32
+K <- C + 273
+R <- 4/5 * C
+
+OUTPUT "Hasil konversi dari Celcius ke Fahrenheit adalah", F
+OUTPUT "Hasil konversi Celcius ke Kelvin adalah", K
+OUTPUT "Hasil konversi Celcius ke Reamur adalah", R
+
+```
+
+## Flowchart with type option
+```mermaid
+flowchart
+a@{shape: circle, label: "Mulai"}
 b@{shape: lean-r, label: "Input:C"}
 type@{shape: lean-r, label: "Input:Type"}
 selector1{"Type == F"}
 selector2{"Type == K"}
 selector3{"Type == R"}
 d@{shape: rect, label: Result = (9/5 × C) + 32}
-e@{shape: rect, label: Result = C + 273.15}
+e@{shape: rect, label: Result = C + 273}
 f@{shape: rect, label: Result = 4/5 x C}
 output@{shape: lean-r, label: '"Output:Result"'}
 j@{shape: dbl-circ, label: "Selesai"}
@@ -43,8 +85,6 @@ f --False --> j
 
 ## Pseudocode
 ```
-// Program Konversi Suhu
-
 DECLARE Celcius: REAL
 DECLARE Result: REAL
 DECLARE Type: CHAR
